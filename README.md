@@ -1,30 +1,59 @@
-We are on a mission to make the process of buying and selling easier and more convenient - and with your help, it will be possible. But before we work together, we would like to assess your programming abilities.
+# Project Title
+React Single Page Application demo that uses Github Gist API to show all public gists for an user.
 
-Please find the small assignment below, that we would like for you to complete in the allotted time. (If you are reading this, the clock is already ticking).
+## Description
+ReactJS Single Page App demo which has the following features:
+Search: When a user enters a username, it should be able to get a full list of public gists by that user.
 
-## YOUR TASK: Create an app that fetches (public) user gists from Github
 
-This project should be built using the base project you should clone from [here](https://github.com/dubizzle-onboarding/gistapi).
+## Libraries/Components used
+* create-react-app: Starter kit to create a reactjs app.
+* Antd css: For styling and basic layout.
+* react-router-dom (4.3.1): For routing between the search results screen and the detail screen.
+* For api calls I am using the fetch() method, which returns a Promise.
 
-It uses Github's [Octokit REST API](https://octokit.github.io/rest.js/v18/)
+## Getting Started and Installing
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-We believe, for an ideal candidate, this should not take more than a couple of hours.
+* First Git clone the repo into your computer
+```
+git clone https://github.com/shireen-code/GitHubSearch.git
+```
+* Open your terminal
+```
+$ cd react-gist-demo
+$ npm install
+```
+* This should install all the dependencies. Once done
+* Run 
+``` 
+$ yarn start
+or
+$ npm start
+```
+* to start the server.
+* open (http://localhost:3000) in your browser. 
+* This should open up the Demo App
 
-### Whats Expected
-Create a list of public gist available.
-- Search Gists for the username.
-- Use state management to save data and not make duplicate calls.
-- Show all the relevant meta data available in the response.
-- We do expect you to create and use proper component hierarchy keeping service and components exclusive.
-- Please use git version control.
 
-### Good to have
-- Proper handling of error message and no results screens.
-- Clean UI similar to [this](https://raw.githubusercontent.com/dubizzle-onboarding/gistapi/main/design_inspiration.png).
-- Unit Tests.
-- Optimised rendering.
-- Code comments.
-- Type checking of the params.
+## Gif Demo
+![Demo](https://github.com/shireen-code/GitHubSearch/blob/main/gif.gif)
 
-### Thank you
-We thank you for your effort and time and good luck.
+#### Generating a Production build
+```
+$ cd react-gist-demo
+$ npm run build
+or
+$ yarn build
+```
+
+## Possible Improvements
+* Pagination for large result set.
+* Better Styling may be.
+* Unit Tests - JEST & Enzyme.
+
+## Authors
+* **shireen-code** - (https://github.com/shireen-code)
+
+## License
+This project is licensed under the MIT License
