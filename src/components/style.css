@@ -1,0 +1,41 @@
+.fileBox,
+.forksBox {
+  margin-top: 1em;
+  padding: 1em 0;
+}
+.fileBox {
+  display: flex;
+  align-items: center;
+  color: #176cd7;
+}
+.fileBox .anticon {
+  color: #0056d1;
+}
+.fileBox ul {
+  list-style: none;
+  padding-left: 10px;
+}
+.fileBox ul li > a {
+  color: #0056d1;
+}
+.fileBox ul li::marker {
+  padding-left: 9px;
+  color: transparent;
+}
+.updatedFiles {
+  margin-bottom: 16px;
+}
+.updatedFiles ul li {
+  color: #8a8c8d;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.userDetails {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+iframe {
+  pointer-events: none;
+}
